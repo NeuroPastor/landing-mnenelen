@@ -17,11 +17,17 @@
     font-weight: normal;
 }
 @font-face {
+    font-family: "Futura Pt Book";
+    src: url("../fonts/FuturaPTBook.otf");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
   font-family: 'FunCityLevel2Basic';
   src: url('../fonts/FunCityLevel2/FunCityLevel2Basic.eot');
   src: url('../fonts/FunCityLevel2/FunCityLevel2Basic.eot') format('embedded-opentype'), url('../fonts/FunCityLevel2/FunCityLevel2Basic.woff2') format('woff2'), url('../fonts/FunCityLevel2/FunCityLevel2Basic.woff') format('woff'), url('../fonts/FunCityLevel2/FunCityLevel2Basic.ttf') format('truetype'), url('../fonts/FunCityLevel2/FunCityLevel2Basic.svg#FunCityLevel2Basic') format('svg');
 }
-
+*{font-family: "Futura Pt Light";}
 .container{box-sizing: border-box;}
 header{
 	background: #ddd;
@@ -197,7 +203,7 @@ header{
 	min-height:165px;
 }
 	.secondBanner div.text-xs-center{padding-top:19px;}
-	.secondBanner .fb{
+	.secondBanner a.fb {
 		margin-left:auto;
 		margin-right:auto;
 		font-family: "Futura Pt Light";
@@ -235,7 +241,7 @@ header{
 	margin-top:27px;
 }
 	.participantsBlocks>div{height:364px;padding-top:15px;}
-	.participantsBlocks .top{position:relative; top:0px;}
+	.participantsBlocks .top{position:relative; top:-3px;letter-spacing: 1.1px}
 	.participantsBlocks .name{
 		font-family: "Futura Pt Demi";
 		font-size:30px;
@@ -260,10 +266,128 @@ header{
 		background: url(../img/participantsRightBg.png) no-repeat top right;
 		background-size:cover;
 		color:#fff;
-
 	}
 .simpleText{
 	color:#515151;
 	font-family: "Futura Pt Light";
 	font-size:16px;
+	margin: 32px 0 53px;
+	line-height: 17px
 }
+.thirdBanner{
+	background: url(../img/thirdBanner.png) no-repeat top center;
+	height:23vh;
+	font-family: "Futura Pt Medium";
+	font-size:48px;
+	color:#fff;
+	min-height:165px;
+}
+	.thirdBanner div.text-xs-center:nth-shild(1){padding-top:19px;letter-spacing: 3px;}
+	.thirdBanner .subtext{
+		font-family: "Futura Pt Medium";
+		font-size:25px;
+		margin-top:-20px;
+		letter-spacing: 2px;
+
+	}
+	.thirdBanner a.fb{
+		margin-left:auto; 
+		margin-right:auto;
+		font-family: "Futura Pt Light";
+		font-size:17px;
+		color:#411800;
+		background: #fff;
+		display:block;
+		float:none;
+		width:180px;
+		border-radius:10px;
+		line-height:33px;
+		margin-top:13px;
+		letter-spacing: 1px
+		
+	}
+.blog{margin-top: 98px;}
+	.blog>.title{
+		font-family: 'FunCityLevel2Basic';
+		font-weight:bold;
+		color:#000;
+		font-size:7px;
+		letter-spacing:150%;
+	}
+	.blog .filter input{display:none;}
+		.blog .filter input:checked+label{
+			background: #a1feae;
+		}
+		.blog .filter label{cursor:pointer;padding:2px 7px;border-radius:5px; margin:0 4px;}
+		.blogPosts{}
+		.blogItem{margin-top: 69px;}
+			.blogItem .date.col-xs-4{
+				color:#1e1e1e;
+				font-size:16px;
+				padding:0;
+			}
+			.blogItem .comments-views{padding-right:0;}
+				.blogItem .comments-views div{float:right;margin:0;color:#1e1e1e;font-size:16px;padding-right:0;}
+					.blogItem .comments-views div img{margin:0 5px;}
+					.blogItem .comments-views .comments{
+						background: url(../icons/comments.svg) no-repeat left top;
+						display:block;
+		/*				width:500px;
+						height:500px;*/
+
+					}
+									.blogItem .comments-views .comments:after{content:" / ";}
+					.blogItem .comments-views .views img{margin: -3px 5px 0;}
+				.blogItem a.title{
+					font-family: "Futura Pt Book";
+					font-size:20px;
+					color:#1e1e1e;
+					text-transform:uppercase;
+					padding:0;
+					margin:10px 0;
+				}
+					.blogItem a.title:hover{text-decoration:none;}
+				.blogItem .blogPostThumb{padding:0;margin-top:20px;position:relative;display:block;}
+					.blogItem .blogPostThumb .details{
+						/*background: url(../icons/radial_gradient.svg) no-repeat center;
+						background-size: contain;*/
+						position:relative;
+						top:-75px;
+						box-shadow:0 0 150px 80px rgba(169, 255, 182,1);
+						border-radius:50%;
+/*						line-height:150px;*/
+						width:1px;
+						height:1px;
+/*						width:100%;
+						height:100%;*/
+						margin:0 auto;
+						text-align:center;
+						text-transform:uppercase;
+						color:#999;
+						display:none;
+						cursor:pointer;
+					}
+					@media all and (max-width:767px){
+						.blogItem .blogPostThumb .details{
+						/*background: url(../icons/radial_gradient.svg) no-repeat center;
+						background-size: contain;*/
+						top:-35vh !important;
+						}
+					}
+					@media all and (max-width:520px){
+						.blogItem .blogPostThumb .details{
+						/*background: url(../icons/radial_gradient.svg) no-repeat center;
+						background-size: contain;*/
+						top:-15vh !important;
+						}
+					}
+						.blogItem .blogPostThumb:hover .details{display:block;}
+						.blogItem .blogPostThumb .details span{
+							vertical-align:middle;
+							height:100%;
+							display:block;
+							position:relative;
+							margin-left:-45px;
+						}
+					.blogItem .blogPostThumb img{padding:0;width:100%;height:auto;}
+				.blogItem .blogPostText{padding-left:0;margin-top:30px;}
