@@ -1,9 +1,18 @@
 @font-face {
-    font-family: "MyriadProRegular";
-    src: url("../fonts/MyriadProRegular/MyriadProRegular.eot");
-    src: url("../fonts/MyriadProRegular/MyriadProRegular.eot?#iefix")format("embedded-opentype"),
-    url("../fonts/MyriadProRegular/MyriadProRegular.woff") format("woff"),
-    url("../fonts/MyriadProRegular/MyriadProRegular.ttf") format("truetype");
+    font-family: "Futura Pt Light";
+    src: url("../fonts/FuturaPTLight.otf");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Futura Pt Medium";
+    src: url("../fonts/FuturaPTMedium.otf");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Futura Pt Demi";
+    src: url("../fonts/FuturaPTDemi.otf");
     font-style: normal;
     font-weight: normal;
 }
@@ -163,9 +172,98 @@ header{
 }
 
 .banner{
-	background: url(../img/topBanner.png) no-repeat 100%;
+	background: url(../img/topBanner.png) no-repeat top center;
 	background-size: contain;	
 }
-	.banner img{
-		max-width:100%;
+	.banner img{width:100%;}
+	.hashbanner{
+		font-family: 
+		color:;
 	}
+
+.description{
+	font-family: "Futura Pt Light";
+	font-size: 16px;
+	color:#8f9197;
+}
+	.description div{padding:35px 0;}
+
+.secondBanner{
+	background: url(../img/secondBanner.png) no-repeat top center;
+	height:23vh;
+	font-family: "Futura Pt Medium";
+	font-size:48px;
+	color:#fff;
+	min-height:165px;
+}
+	.secondBanner div.text-xs-center{padding-top:19px;}
+	.secondBanner .fb{
+		margin-left:auto;
+		margin-right:auto;
+		font-family: "Futura Pt Light";
+		font-size:17px;
+		color:#411800;
+		background: #fff;
+		display:block;
+		float:none;
+		width:180px;
+		border-radius:10px;
+		line-height:33px;
+		margin-top:-5px;
+		
+	}
+		.secondBanner .fb:hover{text-decoration:none;}
+.participants{height:70px;}
+.rot45deg{
+	    margin: 57px auto 0;
+	    display: block;
+	    width: 100px;
+	    -webkit-transform: rotate(-45deg);
+	    -moz-transform: rotate(-45deg);
+	    -o-transform: rotate(-45deg);
+	    -ms-transform: rotate(-45deg);
+	    transform: rotate(-45deg);
+	    font-size: 23px;
+	    font-family: "Futura Pt Light";
+	    color:#4e4e4e;
+	    position:relative;
+		left:-3px;
+	}
+.participantsBlocks{
+	font-family: "Futura Pt Light";
+	font-size:16px;
+	margin-top:27px;
+}
+	.participantsBlocks>div{height:364px;padding-top:15px;}
+	.participantsBlocks .top{position:relative; top:0px;}
+	.participantsBlocks .name{
+		font-family: "Futura Pt Demi";
+		font-size:30px;
+		display:inline-block;
+		width:100%;
+	}
+	.participantsBlocks .hash{
+		text-transform:uppercase;
+		display:inline-block;
+		width:100%;
+	    position: relative;
+	    top: -11px;
+	}
+	.participantsBlocks .video{margin:21px 4px; display:block;}
+	.participantsBlocks>div:nth-child(1){
+		background: url(../img/participantsLeftBg.png) no-repeat top left;
+		background-size:cover;
+		color:#4e4e4e;
+		padding-left:30px;
+	}
+	.participantsBlocks>div:nth-child(2){
+		background: url(../img/participantsRightBg.png) no-repeat top right;
+		background-size:cover;
+		color:#fff;
+
+	}
+.simpleText{
+	color:#515151;
+	font-family: "Futura Pt Light";
+	font-size:16px;
+}
