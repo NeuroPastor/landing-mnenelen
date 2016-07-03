@@ -1,0 +1,171 @@
+@font-face {
+    font-family: "MyriadProRegular";
+    src: url("../fonts/MyriadProRegular/MyriadProRegular.eot");
+    src: url("../fonts/MyriadProRegular/MyriadProRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/MyriadProRegular/MyriadProRegular.woff") format("woff"),
+    url("../fonts/MyriadProRegular/MyriadProRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+  font-family: 'FunCityLevel2Basic';
+  src: url('../fonts/FunCityLevel2/FunCityLevel2Basic.eot');
+  src: url('../fonts/FunCityLevel2/FunCityLevel2Basic.eot') format('embedded-opentype'), url('../fonts/FunCityLevel2/FunCityLevel2Basic.woff2') format('woff2'), url('../fonts/FunCityLevel2/FunCityLevel2Basic.woff') format('woff'), url('../fonts/FunCityLevel2/FunCityLevel2Basic.ttf') format('truetype'), url('../fonts/FunCityLevel2/FunCityLevel2Basic.svg#FunCityLevel2Basic') format('svg');
+}
+
+.container{box-sizing: border-box;}
+header{
+	background: #ddd;
+	height:74px;
+	display:block;
+}
+
+
+.menu{
+	background: url(../icons/menu.svg) no-repeat;
+	width: 50px;
+    height: 50px;
+    float: left;
+    cursor: pointer;
+    margin-right: 100px;
+    margin-left: 20px;
+    margin-top: 12px;
+    z-index: 260;
+    position: relative;
+}
+.search{
+	width: 50px;
+    height: 50px;
+    float: left;
+    cursor: pointer;
+    background: url('../icons/search.svg') no-repeat center center;
+    margin-top: 12px;
+}
+.logohref{
+	width: 230px;
+    height: 74px;
+    background: url('../icons/logo.svg') no-repeat center 22px;
+    margin: 0 auto;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -115px;
+    cursor: pointer;
+    overflow: hidden;
+}
+	.logohref-phone{    
+		position: absolute !important;
+	    bottom: 0;
+	    left: -185px;
+	    display: inline-block;
+	    height: 29px !important;
+	    line-height: 29px;
+	    width: 600px;
+	    text-align: center;
+	    background: #ddd;
+	    font-family: 'FunCityLevel2Basic';
+	    font-size: 9px;
+	    font-weight: bold;
+	    color:#1e1e1e;
+	}
+		.logogref-phone span{font-size:13px;}
+		.char1{position: absolute; left: 50%; margin-left: -0.5em; transform: rotate(13.0025deg); transform-origin: center -30.1111em 0px; bottom: 0px;}
+		.char2{position: absolute; left: 50%; margin-left: -0.5em; transform: rotate(11.0997deg); transform-origin: center -30.1111em 0px; bottom: 0px;}
+		.char3{position: absolute; left: 50%; margin-left: -0.277778em; transform: rotate(9.61977deg); transform-origin: center -30.1111em 0px; bottom: 0px;}
+		.char4{position: absolute; left: 50%; margin-left: -0.5em; transform: rotate(8.13981deg); transform-origin: center -30.1111em 0px; bottom: 0px;}
+		.char5{position: absolute; left: 50%; margin-left: -0.555556em; transform: rotate(6.13128deg); transform-origin: center -30.1111em 0px; bottom: 0px}
+		.char6{position: absolute; left: 50%; margin-left: -0.555556em; transform: rotate(4.01705deg); transform-origin: center -30.1111em 0px; bottom: 0px;}
+		.char7{position: absolute; left: 50%; margin-left: -0.277778em; transform: rotate(2.43137deg); transform-origin: center -30.1111em 0px; bottom: 0px;}
+		.char8{position: absolute; left: 50%; margin-left: -0.5em; transform: rotate(0.951406deg); transform-origin: center -30.1111em 0px; bottom: 0px;}
+		.char9{position: absolute; left: 50%; margin-left: -0.5em; transform: rotate(-0.951406deg); transform-origin: center -30.1111em 0px; bottom: 0px;}
+		.char10{position: absolute; left: 50%; margin-left: -0.555556em; transform: rotate(-2.95993deg); transform-origin: center -30.1111em 0px; bottom: 0px;}
+		.char11{position: absolute; left: 50%; margin-left: -0.277778em; transform: rotate(-4.54561deg); transform-origin: center -30.1111em 0px; bottom: 0px;}
+		.char12{position: absolute; left: 50%; margin-left: -0.5em; transform: rotate(-6.02557deg); transform-origin: center -30.1111em 0px; bottom: 0px;}
+		.char13{position: absolute; left: 50%; margin-left: -0.555556em; transform: rotate(-8.03409deg); transform-origin: center -30.1111em 0px; bottom: 0px;}
+		.char14{position: absolute; left: 50%; margin-left: -0.277778em; transform: rotate(-9.61977deg); transform-origin: center -30.1111em 0px; bottom: 0px;}
+		.char15{position: absolute; left: 50%; margin-left: -0.5em; transform: rotate(-11.0997deg); transform-origin: center -30.1111em 0px; bottom: 0px;}
+		.char16{position: absolute; left: 50%; margin-left: -0.5em; transform: rotate(-13.0025deg); transform-origin: center -30.1111em 0px; bottom: 0px;}
+
+.cart{
+	display: block;
+    width: 50px;
+    height: 50px;
+    float: right;
+    cursor: pointer;
+    background: url('../icons/cart.svg') no-repeat center center;
+    margin-top: 12px;
+}
+.login{
+    width: 50px;
+    height: 50px;
+    float: right;
+    cursor: pointer;
+    margin-right: 20px;
+    margin-left: 100px;
+    background: url('../icons/login.svg') no-repeat center center;
+    margin-top: 12px;
+}
+
+
+@media all and (max-width: 767px){
+	
+	header{height:130px;}
+	header a{
+			display:inline-block;
+			float:left !important;
+			margin-left:0 !important;
+			margin-right:0 !important;
+			margin-top:0 !important;
+			margin-bottom:0 !important;
+			width:25% !important;
+	    	height: 50px !important;
+	    	text-align:center;
+		}
+		.menu{
+			background: url(../icons/menu.svg) no-repeat center;
+		}
+		.search{
+			background: url('../icons/search.svg') no-repeat center center;
+		}
+		.logohref{
+			background: url('../icons/logo.svg') no-repeat center 22px;
+			float:none;
+			display:block;
+			height:74px !important;
+			width:100% !important;
+			text-align:center;
+			position:relative;
+			left:0;
+			margin:0 auto 5px
+		}
+			.logohref-phone{    
+				position: absolute !important;
+			    bottom: 0;
+			   	left: 0;
+			    display: inline-block;
+			    height: 29px !important;
+			    line-height: 29px;
+			    width: 100%;
+			    text-align: center;
+			    background: #ddd;
+			    font-family: 'FunCityLevel2Basic';
+			    font-size: 9px;
+			    font-weight: bold;
+			    color:#1e1e1e;
+			}
+		.cart{
+			background: url('../icons/cart.svg') no-repeat center center;
+		}
+		.login{
+			background: url('../icons/login.svg') no-repeat center center;
+		}
+}
+
+.banner{
+	background: url(../img/topBanner.png) no-repeat 100%;
+	background-size: contain;	
+}
+	.banner img{
+		max-width:100%;
+	}
